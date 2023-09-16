@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Database Records</title>
+</head>
+
+<body>
+    <table border="solid">
+        <tr>
+            <th>Document</th>
+
+        </tr>
+
+        <% db.forEach((doc)=> { %>
+            <tr>
+                <td>
+                    <%= doc%>
+                </td>
+
+
+                <%})%>
+                    </td>
+            </tr>
+    </table>
+<form action="goseedb" method="post">
+    <button >go to seedb</button>
+</form>
+</body>
+
+</html>
